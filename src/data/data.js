@@ -21,10 +21,27 @@ const labels = [
   "Secure Crash Reporting With Real-Time Alerts",
 ];
 
+const icons = [
+  {
+    src: require("@/assets/logos/google-logo.svg"),
+    name: "Google",
+    bgColor: "#4285F4",
+    fontColor: "white",
+  },
+  {
+    src: require("@/assets/logos/github.svg"),
+    name: "Github",
+    bgColor: "black",
+    fontColor: "white",
+  },
+  {
+    src: require("@/assets/logos/microsoft.svg"),
+    name: "Microsoft",
+    bgColor: "white",
+    fontColor: "#495466",
+  },
+];
 const logos = [
-  require("@/assets/logos/github.svg"),
-  require("@/assets/logos/google-logo.svg"),
-  require("@/assets/logos/microsoft.svg"),
   require("@/assets/logos/lyft-full-logo.svg"),
   require("@/assets/logos/buzzfeed-full-logo.svg"),
   require("@/assets/logos/asana-full-logo.svg"),
@@ -32,4 +49,4 @@ const logos = [
   require("@/assets/logos/house-party-logo.svg"),
 ];
 
-export { accounts, sliderImgs, labels, logos };
+export { accounts, sliderImgs, labels, icons, logos };
