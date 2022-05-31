@@ -12,7 +12,7 @@ const router = createRouter({
 });
 
 // testing
-let isLoggedIn = true;
+let isLoggedIn = false;
 
 // Navigation Guards
 router.beforeEach((to, from, next) => {

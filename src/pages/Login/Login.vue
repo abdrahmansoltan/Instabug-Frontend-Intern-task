@@ -1,9 +1,15 @@
 <template>
-  <div>LOGIN</div>
+  <div class="container">
+    <Slider class="slider" />
+    <div class="login">Form</div>
+  </div>
 </template>
 
 <script>
-export default {};
+import Slider from "@/components/Slider/Slider.vue";
+export default { components: { Slider } };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@import "./Login.styles.scss";
+</style>

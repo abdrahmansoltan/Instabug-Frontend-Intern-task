@@ -1,0 +1,15 @@
+@import "../../assets/styles/mixins.scss";
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+
+  .slider {
+    width: 50%;
+  }
+  .login {
+    width: 50%;
+    text-align: center;
+    @include center-flex;
+  }
+}

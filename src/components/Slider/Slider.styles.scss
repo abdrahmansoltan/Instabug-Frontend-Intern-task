@@ -1,0 +1,45 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+.slider {
+  &-container {
+    background-color: $color-dark-blue;
+    width: 100%;
+    height: 100%;
+    padding: 5rem 1.2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  &-img {
+    width: 75%;
+    height: 75%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  p {
+    color: #eee;
+    font-size: 26px;
+    // to make the text & dots in a fixed place each time
+    min-height: 2.5rem;
+  }
+
+  .dots-container {
+    @include center-flex;
+    gap: 0.5rem;
+  }
+  .dot {
+    height: $spacing-xs;
+    width: $spacing-xs;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &--active {
+      background-color: #eee;
+    }
+  }
+}
