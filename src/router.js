@@ -11,16 +11,18 @@ const router = createRouter({
   ],
 });
 
-// testing
-let isLoggedIn = false;
+// Authorization ( must be function not variable so that it's checked each time )
+let isLoggedIn = () => {
+  return localStorage.getItem("userEmail") ? true : false;
+};
 
 // Navigation Guards
 router.beforeEach((to, from, next) => {
-  if (to.path == "/login" && isLoggedIn) {
+  if (to.path == "/login" && isLoggedIn()) {
     next({
       path: "/welcome",
     });
-  } else if (to.path == "/welcome" && !isLoggedIn) {
+  } else if (to.path == "/welcome" && !isLoggedIn()) {
     next({
       path: "/login",
     });
