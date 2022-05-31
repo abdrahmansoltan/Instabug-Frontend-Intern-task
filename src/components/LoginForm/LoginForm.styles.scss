@@ -3,118 +3,133 @@
 
 .card {
   padding: 0rem 3rem;
-}
-.form-container {
-  flex-direction: column;
-  gap: 1.5rem;
-  width: 70%;
-}
-
-.instabug {
-  p {
+  .form-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 70%;
+  }
+  .instabug p {
     font-size: 1.5rem;
     color: #495466;
     margin: 0.75em 0;
   }
-}
-.social {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.divider {
-  background-color: #cdcccd;
-  height: 0.5px;
-  line-height: 1px;
-  margin: 1.5rem auto;
-
-  &__title {
-    background: white;
-    padding: 0 0.5rem;
-    color: #495466;
-    font-weight: 700;
-  }
-}
-
-form {
-  margin-bottom: 1rem;
-
-  .label-container {
+  .social {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .divider {
+    background-color: #cdcccd;
+    height: 0.5px;
+    line-height: 1px;
+    margin: 1.5rem auto;
+    &-title {
+      background: white;
+      padding: 0 0.5rem;
+      color: #495466;
+      font-weight: 700;
+    }
+  }
+
+  .btn {
     margin-bottom: 0.5rem;
-    font-size: 0.8rem;
-    color: #445065;
-
-    span {
-      color: #a1a7b2;
-    }
   }
 
-  input {
-    width: 100%;
-    height: 2.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    &::placeholder {
-      color: #ccc;
-    }
-    &:focus {
-      outline: none;
-      border-color: #09f;
-      box-shadow: inset 0 0 4px 0 #09f;
-    }
-  }
-
-  .error {
-    width: 100%;
-    height: 2.5rem;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    color: #445065;
-    border-radius: 4px;
-    background-color: #fce6e2;
-    margin-bottom: 0.75rem;
-    line-height: 1.6;
-    text-align: start;
-    padding: 0.5rem;
-  }
-  .invalid {
-    border-color: #f24220;
-  }
-  .form-error {
-    margin-top: 0.25rem;
+  form {
     margin-bottom: 1rem;
-    color: #f24220;
-    text-align: start !important;
+
+    .label-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+      font-size: 0.8rem;
+      color: #445065;
+
+      a {
+        color: #0089e5;
+        text-decoration: none;
+
+        &:hover,
+        &:active,
+        &:focus {
+          color: #16253f;
+        }
+      }
+
+      .link-grey {
+        color: #a1a7b2;
+      }
+    }
+
+    input {
+      width: 100%;
+      height: 2.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      &::placeholder {
+        color: #ccc;
+      }
+      &:focus {
+        outline: none;
+        border-color: #09f;
+        box-shadow: inset 0 0 4px 0 #09f;
+      }
+    }
+
+    // ---------------------- Errors ---------------------- //
+    .error {
+      width: 100%;
+      height: 2.5rem;
+      border: 1px solid rgba(0, 0, 0, 0.25);
+      color: #445065;
+      border-radius: 4px;
+      background-color: #fce6e2;
+      margin-bottom: 0.75rem;
+      line-height: 1.6;
+      text-align: start;
+      padding: 0.5rem;
+    }
+    .invalid {
+      border-color: #f24220;
+    }
+    .form-error {
+      margin-top: 0.25rem;
+      margin-bottom: 1rem;
+      color: #f24220;
+      text-align: start !important;
+    }
+    button:disabled {
+      cursor: not-allowed;
+      background-color: #ccc !important;
+    }
   }
-  button:disabled {
-    cursor: not-allowed;
-    background-color: #ccc !important;
-  }
-}
 
-.logos {
-  width: auto;
-}
+  .logos {
+    &-title {
+      color: #a1a7b2;
+      margin: 1.2rem 0;
+    }
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      gap: 0.6rem;
 
-.logos-title {
-  color: #a1a7b2;
-  margin-bottom: 1rem;
-}
-.logos-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  gap: 0.5rem;
+      .logo:first-child .logos-img {
+        width: 3rem;
+        height: 1.5rem;
+      }
+    }
 
-  .logo-img {
-    width: 75px;
-    height: 22px;
-    object-fit: contain;
+    &-img {
+      width: 5.5rem;
+      height: 1.8rem;
+      object-fit: contain;
+    }
   }
 }
