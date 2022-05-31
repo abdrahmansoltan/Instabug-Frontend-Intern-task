@@ -2,6 +2,24 @@
 @import "@/assets/styles/variables.scss";
 
 .card {
+  @media (max-width: 620px) {
+    padding: 0;
+
+    .form-container {
+      min-width: 85%;
+    }
+
+    .logos-img {
+      width: 3.6rem !important;
+      height: 1.5rem !important;
+    }
+
+    .logo:first-child .logos-img {
+      width: 2rem !important;
+      height: 1.2rem !important;
+    }
+  }
+
   padding: 0rem 3rem;
   .form-container {
     flex-direction: column;
@@ -115,7 +133,7 @@
     &-list {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
       list-style: none;
       gap: 0.6rem;

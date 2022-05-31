@@ -6,6 +6,23 @@
   display: flex;
   overflow: hidden;
 
+  @media (max-width: 1000px) {
+    justify-content: center;
+
+    .slider {
+      display: none;
+    }
+    .login {
+      width: 80% !important;
+    }
+  }
+  @media (max-width: 620px) {
+    overflow: scroll;
+    .login {
+      width: 100% !important;
+    }
+  }
+
   .slider {
     width: 50%;
   }
