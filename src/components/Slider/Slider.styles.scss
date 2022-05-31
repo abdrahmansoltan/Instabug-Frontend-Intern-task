@@ -1,5 +1,5 @@
-@import "../../assets/styles/variables.scss";
-@import "../../assets/styles/mixins.scss";
+@import "@/assets/styles/variables.scss";
+@import "@/assets/styles/mixins.scss";
 
 .slider {
   &-container {
@@ -10,7 +10,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: $spacing-xxl;
   }
 
   &-img {
@@ -22,24 +22,25 @@
 
   p {
     color: #eee;
-    font-size: 26px;
+    font-size: 1.5rem;
+
     // to make the text & dots in a fixed place each time
-    min-height: 2.5rem;
+    min-height: $spacing-xxl;
   }
 
   .dots-container {
     @include center-flex;
     gap: 0.5rem;
-  }
-  .dot {
-    height: $spacing-xs;
-    width: $spacing-xs;
-    border: 1px solid #eee;
-    border-radius: 50%;
-    cursor: pointer;
 
-    &--active {
-      background-color: #eee;
+    .dot {
+      height: $spacing-xs;
+      width: $spacing-xs;
+      border: 1px solid #eee;
+      border-radius: 50%;
+      cursor: pointer;
+      &--active {
+        background-color: #eee;
+      }
     }
   }
 }

@@ -1,2 +1,22 @@
-@import "../../assets/styles/mixins.scss";
-@import "../../assets/styles/variables.scss";
+@import "@/assets/styles/mixins.scss";
+@import "@/assets/styles/variables.scss";
+
+.card {
+  width: 50%;
+  margin: 2rem auto;
+  @include center-flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: $color-dark-grey;
+
+  span {
+    color: #187eff;
+  }
+
+  .logo {
+    width: 15rem;
+  }
+  .btn {
+    width: 40%;
+  }
+}

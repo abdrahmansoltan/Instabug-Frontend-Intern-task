@@ -1,17 +1,17 @@
 <template>
-  <div class="welcome card">
+  <div class="card">
     <img class="logo" src="@/assets/logos/logo.svg" alt="instabug logo" />
-    <span
-      >Welcome to <strong>{{ email }}</strong></span
-    >
-    <br />
+
+    <h2>
+      Welcome to <span>{{ email }}</span>
+    </h2>
     <base-button
       class="btn"
       @click="logout"
       type="submit"
       text="Log out"
       fontColor="white"
-      bgColor="#db8680"
+      bgColor="#187eff"
     />
   </div>
 </template>
@@ -26,9 +26,11 @@ export default {
     };
   },
   created() {
+    // Runs as soon as the component is created
     this.email = window.localStorage.getItem("userEmail");
   },
   methods: {
+    // ----------------logging-out functionality---------------- //
     logout() {
       window.localStorage.removeItem("userEmail");
       this.$router.push("/login");
@@ -39,27 +41,4 @@ export default {
 
 <style lang="scss" scoped>
 @import "./Welcome.styles.scss";
-
-@import "../../assets/styles/mixins.scss";
-@import "../../assets/styles/variables.scss";
-
-.welcome {
-  width: 50%;
-  margin: 2rem auto;
-}
-
-.card {
-  @include center-flex;
-  flex-direction: column;
-  gap: 1rem;
-  color: #495466;
-  font-size: $text-l;
-
-  .logo {
-    width: 15rem;
-  }
-  .btn {
-    width: 40%;
-  }
-}
 </style>

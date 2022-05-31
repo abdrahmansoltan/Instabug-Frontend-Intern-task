@@ -6,9 +6,11 @@
         alt="not-found image"
         class="not-found-img"
       />
-      <p class="not-found-title">404-Page-Not-Found!</p>
+
+      <h2 class="not-found-title">404-Page-Not-Found!</h2>
+
       <p class="not-found-message">
-        Sorry, that page doesn’t exist. What would you like to do?
+        Sorry, that page doesn't exist. What would you like to do?
       </p>
     </div>
   </div>

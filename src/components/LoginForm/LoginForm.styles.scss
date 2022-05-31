@@ -1,5 +1,5 @@
-@import "../../assets/styles/mixins.scss";
-@import "../../assets/styles/variables.scss";
+@import "@/assets/styles/mixins.scss";
+@import "@/assets/styles/variables.scss";
 
 .card {
   padding: 0rem 3rem;
@@ -10,13 +10,13 @@
   }
   .instabug p {
     font-size: 1.5rem;
-    color: #495466;
-    margin: 0.75em 0;
+    color: $color-dark-grey;
+    margin: 0.75rem 0;
   }
   .social {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: $spacing-xs;
   }
 
   .divider {
@@ -27,7 +27,7 @@
     &-title {
       background: white;
       padding: 0 0.5rem;
-      color: #495466;
+      color: $color-dark-grey;
       font-weight: 700;
     }
   }
@@ -58,13 +58,13 @@
       }
 
       .link-grey {
-        color: #a1a7b2;
+        color: $color-light-grey;
       }
     }
 
     input {
       width: 100%;
-      height: 2.5rem;
+      height: $spacing-xxl;
       border: 1px solid #ccc;
       border-radius: 4px;
       padding-right: 1rem;
@@ -82,7 +82,7 @@
     // ---------------------- Errors ---------------------- //
     .error {
       width: 100%;
-      height: 2.5rem;
+      height: $spacing-xxl;
       border: 1px solid rgba(0, 0, 0, 0.25);
       color: #445065;
       border-radius: 4px;
@@ -93,12 +93,12 @@
       padding: 0.5rem;
     }
     .invalid {
-      border-color: #f24220;
+      border-color: $color-invalid;
     }
     .form-error {
       margin-top: 0.25rem;
       margin-bottom: 1rem;
-      color: #f24220;
+      color: $color-invalid;
       text-align: start !important;
     }
     button:disabled {
@@ -109,7 +109,7 @@
 
   .logos {
     &-title {
-      color: #a1a7b2;
+      color: $color-light-grey;
       margin: 1.2rem 0;
     }
     &-list {
