@@ -1,0 +1,26 @@
+@import "../../assets/styles/mixins.scss";
+@import "../../assets/styles/variables.scss";
+
+.container {
+  @include container;
+  text-align: center;
+
+  .not-found- {
+    &img {
+      width: 80%;
+      height: 80%;
+    }
+
+    &title {
+      color: $color-dark-blue;
+      font-weight: 700;
+      font-size: $text-l;
+      margin-bottom: 1rem;
+    }
+
+    &message {
+      color: #6f7fa0;
+      font-weight: 500;
+    }
+  }
+}
