@@ -3,13 +3,15 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+  overflow: hidden;
 
   .slider {
     width: 50%;
   }
   .login {
     width: 50%;
-    text-align: center;
     @include center-flex;
+    text-align: center;
+    max-height: 100vh;
   }
 }

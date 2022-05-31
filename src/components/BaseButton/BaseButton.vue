@@ -8,7 +8,7 @@
       borderColor: fontColor,
     }"
   >
-    <img :src="icon" alt="logo" />
+    <img v-if="icon" :src="icon" alt="logo" />
 
     <span>{{ text }}</span>
   </button>
