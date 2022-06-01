@@ -24,7 +24,8 @@
 
       <!-- -------------------------------- Form --------------------------------- -->
       <form @submit.prevent="login">
-        <div class="error" v-if="loginError">Your email and/or password are incorrect
+        <div class="error" v-if="loginError">
+          Your email and/or password are incorrect
         </div>
 
         <div class="label-container">
@@ -35,7 +36,6 @@
           type="email"
           placeholder="you@company.com"
           v-model="email"
-          class="form__input"
           :class="{ invalid: !validEmail }"
           @change="validateEmail()"
         />
@@ -54,9 +54,8 @@
           type="password"
           placeholder="6+ Characters"
           v-model="password"
-          class="form__input"
           :class="{ invalid: !validPassword }"
-          @change="validatePassword"
+          @input="validatePassword"
         />
         <p class="form-error" v-if="!validPassword">
           Password must be 6 characters or more

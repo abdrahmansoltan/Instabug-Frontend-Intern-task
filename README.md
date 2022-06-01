@@ -66,6 +66,13 @@ Small app that consists of 3 pages (login. Welcome, 404) pages using vue.js
 | mohamed6@instabug.com | A12345678 |
 | mohamed7@instabug.com | A12345678 |
 
+#### Validation
+
+- **Email validation**: as per **RFC2822** standards.
+- **Password validation**:
+  - The password must be more than **6** characters.
+  - The password must contain at least **1** uppercase letter and **1** number and **shouldn’t contain the email address name** (the part that came before the `@`).
+
 ### Built With
 
 - Vue
