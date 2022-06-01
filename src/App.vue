@@ -13,4 +13,11 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
 }
+
+// To Fix Bug: Vercel remove 60+ px from the page's height
+@media (max-height: 640px) {
+  html {
+    font-size: 90%;
+  }
+}
 </style>
