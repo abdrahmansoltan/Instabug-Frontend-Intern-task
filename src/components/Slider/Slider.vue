@@ -1,6 +1,20 @@
 <template>
   <div class="slider-container">
-    <img
+    <swiper
+      :pagination="{
+        clickable: true,
+      }"
+      :modules="modules"
+      :autoplay="{ delay: 3000, disableOnInteraction: false }"
+    >
+      <swiper-slide v-for="item in this.sliderItems" :key="item.img">
+        <img :src="item.img" alt="slider image" class="slider-img" />
+        <p>{{ item.label }}</p>
+      </swiper-slide>
+    </swiper>
+
+    <!----------------------- OLD SOLUTION USING TIMER ----------------------->
+    <!-- <img
       :src="this.imgs[this.currentIndex]"
       alt="slider image"
       class="slider-img"
@@ -16,29 +30,34 @@
         :key="item"
         @click="this.currentIndex = index"
       ></span>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
-import { labels, sliderImgs } from "@/data/data";
+import { sliderData } from "@/data/data";
+import { Swiper, SwiperSlide } from "swiper/vue";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+// import required modules
+import { Pagination, Autoplay } from "swiper";
 
 export default {
-  data() {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
     return {
-      imgs: sliderImgs,
-      labels: labels,
-      currentIndex: 0,
-      timer: null,
+      modules: [Pagination, Autoplay],
     };
   },
-  created() {
-    setInterval(() => {
-      this.currentIndex++;
-      if (this.currentIndex === this.imgs.length) {
-        this.currentIndex = 0;
-      }
-    }, 3000);
+
+  data() {
+    return {
+      sliderItems: sliderData,
+    };
   },
 };
 </script>

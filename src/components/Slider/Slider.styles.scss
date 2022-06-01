@@ -6,41 +6,45 @@
     background-color: $color-dark-blue;
     width: 100%;
     height: 100%;
-    padding: 5rem 1.2rem;
+    padding: 6rem 2rem;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: $spacing-xxl;
+    // display: flex;
+    // flex-direction: column;
+    // gap: $spacing-xxl;
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+
+      &-slide {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-xxl;
+      }
+
+      p {
+        color: #eee;
+        font-size: 1.5rem;
+        // to make the text & dots in a fixed place each time
+        min-height: $spacing-md;
+      }
+
+      &-pagination-bullet-active {
+        height: $spacing-xs;
+        width: $spacing-xs;
+        border: 1px solid #eee;
+        border-radius: 50%;
+        cursor: pointer;
+        &--active {
+          background-color: #eee !important;
+        }
+      }
+    }
   }
 
   &-img {
     width: 75%;
     height: 75%;
-    display: block;
     margin: 0 auto;
-  }
-
-  p {
-    color: #eee;
-    font-size: 1.5rem;
-
-    // to make the text & dots in a fixed place each time
-    min-height: $spacing-xxl;
-  }
-
-  .dots-container {
-    @include center-flex;
-    gap: 0.5rem;
-
-    .dot {
-      height: $spacing-xs;
-      width: $spacing-xs;
-      border: 1px solid #eee;
-      border-radius: 50%;
-      cursor: pointer;
-      &--active {
-        background-color: #eee;
-      }
-    }
   }
 }

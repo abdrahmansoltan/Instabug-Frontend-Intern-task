@@ -9,17 +9,32 @@ const accounts = [
   { email: "mohamed7@instabug.com", password: "A12345678" },
 ];
 
-const sliderImgs = [
-  require("@/assets/images/overview.svg"),
-  require("@/assets/images/bug-reporting.svg"),
-  require("@/assets/images/crash-reporting.svg"),
+const sliderData = [
+  {
+    img: require("@/assets/images/overview.svg"),
+    label: "Accelerate Your Entire Mobile Team Workflow",
+  },
+  {
+    img: require("@/assets/images/bug-reporting.svg"),
+    label: "The Most Comprehensive Bug Reporting Tool for Mobile Apps",
+  },
+  {
+    img: require("@/assets/images/crash-reporting.svg"),
+    label: "Secure Crash Reporting With Real-Time Alerts",
+  },
 ];
 
-const labels = [
-  "Accelerate Your Entire Mobile Team Workflow",
-  "The Most Comprehensive Bug Reporting Tool for Mobile Apps",
-  "Secure Crash Reporting With Real-Time Alerts",
-];
+// const sliderImgs = [
+//   require("@/assets/images/overview.svg"),
+//   require("@/assets/images/bug-reporting.svg"),
+//   require("@/assets/images/crash-reporting.svg"),
+// ];
+
+// const labels = [
+//   "Accelerate Your Entire Mobile Team Workflow",
+//   "The Most Comprehensive Bug Reporting Tool for Mobile Apps",
+//   "Secure Crash Reporting With Real-Time Alerts",
+// ];
 
 const icons = [
   {
@@ -49,4 +64,4 @@ const logos = [
   require("@/assets/logos/house-party-logo.svg"),
 ];
 
-export { accounts, sliderImgs, labels, icons, logos };
+export { accounts, sliderData, icons, logos };
