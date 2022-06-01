@@ -10,14 +10,14 @@
 <!-- PROJECT LOGO -->
 <div align="center">
 <br>
-<a href="#">
+<a href="https://instabug-frontend-intern-task-a2fnwyizk-abdrahmansoltan.vercel.app/login">
     <img src="./src/assets/logos/logo.svg" alt="Logo" height="50" >
   </a>
 <br>
 <br>
 
   <p align="center">
-  <a href="#">View Demo</a>
+  <a href="https://instabug-frontend-intern-task-a2fnwyizk-abdrahmansoltan.vercel.app/login">View Demo</a>
     ·
     <a href="https://github.com/abdrahmansoltan/Instabug-Frontend-Intern-task/issues">Report Bug</a>
   </p>
@@ -31,6 +31,7 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
+        <li><a href="#users">Users</a></li>
       </ul>
     </li>
     <li>
@@ -52,6 +53,19 @@ Small app that consists of 3 pages (login. Welcome, 404) pages using vue.js
 
 ![Preview](./src/assets/images//preview.PNG)
 
+### Users
+
+| Email                 | Password  |
+| --------------------- | --------- |
+| mohamed@instabug.com  | A12345678 |
+| mohamed1@instabug.com | A12345678 |
+| mohamed2@instabug.com | A12345678 |
+| mohamed3@instabug.com | A12345678 |
+| mohamed4@instabug.com | A12345678 |
+| mohamed5@instabug.com | A12345678 |
+| mohamed6@instabug.com | A12345678 |
+| mohamed7@instabug.com | A12345678 |
+
 ### Built With
 
 - Vue
@@ -67,15 +81,11 @@ Small app that consists of 3 pages (login. Welcome, 404) pages using vue.js
 
 ## Getting Started
 
-This project require some perquisites and dependencies to be installed, you can find the instructions below
-
-This project require some perquisites and dependencies to be installed, you can view it online using this [demo](#). or you can find the instructions below:
+This project require some perquisites and dependencies to be installed, you can view it online using this [demo](https://instabug-frontend-intern-task-a2fnwyizk-abdrahmansoltan.vercel.app/login). or you can find the instructions below:
 
 > To get a local copy, follow these simple steps :
 
 ### Installation
-
-#### installing Locally
 
 1. Clone the repo
    ```sh
@@ -102,10 +112,16 @@ This project require some perquisites and dependencies to be installed, you can 
 5. Run development server
 
    ```sh
-   npm run serve
+   npm start
    ```
 
-### Ports
+6. Run Tests
+
+   ```sh
+   npm test
+   ```
+
+#### Ports
 
 - Server runs on port `8080`
 

@@ -24,8 +24,7 @@
 
       <!-- -------------------------------- Form --------------------------------- -->
       <form @submit.prevent="login">
-        <div class="error" v-if="loginError">
-          Your email and/or password are incorrect
+        <div class="error" v-if="loginError">Your email and/or password are incorrect
         </div>
 
         <div class="label-container">
