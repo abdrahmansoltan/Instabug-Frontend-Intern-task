@@ -10,14 +10,14 @@
 <!-- PROJECT LOGO -->
 <div align="center">
 <br>
-<a href="https://instabug-frontend-intern-task-a2fnwyizk-abdrahmansoltan.vercel.app/login">
+<a href="https://instabug-frontend-intern-task.vercel.app/">
     <img src="./src/assets/logos/logo.svg" alt="Logo" height="50" >
   </a>
 <br>
 <br>
 
   <p align="center">
-  <a href="https://instabug-frontend-intern-task-a2fnwyizk-abdrahmansoltan.vercel.app/login">View Demo</a>
+  <a href="https://instabug-frontend-intern-task.vercel.app/">View Demo</a>
     ·
     <a href="https://github.com/abdrahmansoltan/Instabug-Frontend-Intern-task/issues">Report Bug</a>
   </p>
@@ -88,7 +88,7 @@ Small app that consists of 3 pages (login. Welcome, 404) pages using vue.js
 
 ## Getting Started
 
-This project require some perquisites and dependencies to be installed, you can view it online using this [demo](https://instabug-frontend-intern-task-a2fnwyizk-abdrahmansoltan.vercel.app/login). or you can find the instructions below:
+This project require some perquisites and dependencies to be installed, you can view it online using this [demo](https://instabug-frontend-intern-task.vercel.app/). or you can find the instructions below:
 
 > To get a local copy, follow these simple steps :
 
